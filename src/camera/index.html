@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>色盲模拟器</title>
+</head>
+<body>
+  <h1>色盲模拟器</h1>
+  <video id="video" width="640" height="480" autoplay></video>
+  <button id="captureBtn">捕获图像</button>
+  <input type="file" id="fileInput" accept="image/*">
+  <div class="float" style="position: fixed; width: 100vw;top: 0; left: 0">
+    <input type="range" style="width: 100%;"/>
+  </div>
+  <div>
+    <h2>原始图像</h2>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <!-- <canvas id="originalCanvas" width="640" height="480"></canvas> -->
+  </div>
+  <div class="row" style="display: flex;">
+    
+  <div>
+    <h2>红色弱视</h2>
+    <canvas id="type1Canvas" width="640" height="480"></canvas>
+  </div>
+  <div>
+    <h2>绿色弱视</h2>
+    <canvas id="type2Canvas" width="640" height="480"></canvas>
+  </div>
+  <div>
+    <h2>蓝色弱视</h2>
+    <canvas id="type3Canvas" width="640" height="480"></canvas>
+  </div>
+</div>
+  <script src="./machado_colorblind_simulation.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
